@@ -1,0 +1,8 @@
+language: racket
+
+before_install:
+ - sudo apt-get -qq update
+ - sudo apt-get install -y racket
+
+script:
+ - raco test tests.rkt
