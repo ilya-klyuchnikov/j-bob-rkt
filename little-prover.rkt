@@ -1,8 +1,8 @@
 #lang racket/base
 
-(module little-prover (submod "j-bob.rkt" j-bob)
+(module little-prover (submod "j-bob-api.rkt" j-bob-api)
   (provide (all-defined-out)
-           (all-from-out (submod "j-bob.rkt" j-bob)))
+           (all-from-out (submod "j-bob-api.rkt" j-bob-api)))
   ;; Chapter 1
   (defun chapter1.example1 ()
     (J-Bob/step (prelude)
